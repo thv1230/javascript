@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5%;
+            text-align: center;
+            height: 20%;
+            border: 5px solid rgb(211, 211, 248);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: 5px solid rgb(247, 207, 227);
+            margin-top: 3%;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            margin-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到我的网页!</h1>
+    <p>点击下面的按钮来显示一个消息。</p>
+    <button onclick="showMessage()">点击我!</button>
+    <div id="message"></div>
+
+    <script>
+        function showMessage() {
+            // 获取 message 元素
+            var messageElement = document.getElementById('message');
+            
+            // 设置消息内容
+            messageElement.textContent = '你好！';
+        }
+    </script>
+</body>
+</html>
